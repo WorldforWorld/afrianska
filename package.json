@@ -23,9 +23,6 @@
     "url": "https://github.com/WorldforWorld/afrianska/issues"
   },
   "homepage": "https://github.com/WorldforWorld/afrianska#readme",
-  "dependencies": {
-    "swiper": "latest"
-  },
   "devDependencies": {
     "browser-sync": "latest",
     "del": "latest",

@@ -1,12 +1,9 @@
 .burger__menu {
+	display: block;
   position: relative;
-  display: none;
   width: 30px;
   height: 20px;
   z-index: 3;
-  @media (max-width: 767px) {
-    display: block;
-  }
   &:before,
   &:after {
     content: '';

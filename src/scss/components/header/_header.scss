@@ -3,39 +3,5 @@
 @import 'nav';
 
 header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  padding: 24px 0;
-  background-color: $dark;
-  box-shadow: 4px 4px 8px 0px transparent;
-  transition: box-shadow ease-in-out 0.2s, padding ease-in-out 0.2s;
-  @media (max-width: 767px) {
-    padding: 12px 0;
-  }
-  &.scroll {
-    padding: 12px 0;
-    box-shadow: 4px 4px 8px 0px rgba($primary, 0.2);
-  }
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-.contact {
-  margin-left: rem(15);
-  @media (max-width: 540px) {
-    margin-left: auto;
-    margin-right: rem(15);
-    &__button {
-      display: none;
-    }
-  }
-  &__button {
-    margin-left: rem(43);
-  }
+ 
 }
