@@ -50,9 +50,9 @@ const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images)
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
-const build = gulp.series(reset, gulp.parallel(mainTasks, favicon));
-const deployZIP = gulp.series(reset, gulp.parallel(mainTasks, favicon), zip);
-const deployFTP = gulp.series(reset, gulp.parallel(mainTasks, favicon), ftp);
+const build = gulp.series(reset, favicon, gulp.parallel(mainTasks));
+const deployZIP = gulp.series(reset, favicon, gulp.parallel(mainTasks), zip);
+const deployFTP = gulp.series(reset, favicon, gulp.parallel(mainTasks), ftp);
 
 // Экспорт сценариев
 export { dev };
