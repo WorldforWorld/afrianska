@@ -1,0 +1,51 @@
+.touch {
+  padding-right: rem(95);
+  @media (max-width: 1216px) {
+    padding-right: rem(50);
+  }
+  @media (max-width: 1068px) {
+    padding-right: 0;
+  }
+  &__secondary {
+    border-top-right-radius: rem(200);
+    @media (max-width: 1216px) {
+      border-top-right-radius: rem(100);
+    }
+    @media (max-width: 1068px) {
+      border-top-right-radius: 0;
+    }
+  }
+  &__container {
+    padding: rem(91) rem(15) rem(96);
+    border-bottom: 1px solid rgba($color: $light, $alpha: 0.4);
+    @media (max-width: 767px) {
+      padding: rem(40) rem(15);
+    }
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: rem(30);
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+  &__h2 {
+    margin-top: 0;
+    margin-bottom: rem(32);
+    max-width: rem(388);
+    @media (max-width: 767px) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    max-width: rem(460);
+    @media (max-width: 767px) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}

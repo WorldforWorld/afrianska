@@ -4,6 +4,12 @@
   margin: auto;
   padding: 0 15px;
 }
+.container-fluid {
+  width: 100%;
+  max-width: $container-fluid + 30px;
+  margin: auto;
+  padding: 0 15px;
+}
 .col-50 {
   width: 50%;
 }
@@ -12,6 +18,9 @@
 }
 .d-grid {
   display: grid;
+}
+.d-inline-block {
+  display: inline-block;
 }
 .columns-2 {
   grid-template-columns: 1fr 1fr;

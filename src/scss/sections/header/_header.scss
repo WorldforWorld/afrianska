@@ -1,0 +1,16 @@
+@import '../../components/logo/logo';
+@import '../../components/burger_menu/burger_menu';
+@import '../../components/nav/nav';
+
+.header {
+  padding-top: rem(48);
+  padding-bottom: rem(15);
+  @media (max-width: 960px) {
+    padding-top: rem(15);
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

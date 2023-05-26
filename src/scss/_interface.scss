@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  padding: rem(15) rem(48);
+  @media (max-width: 960px) {
+    padding: rem(14) rem(40);
+  }
+  text-align: center;
+  text-decoration: none;
+  line-height: rem(26);
+  letter-spacing: 0.04em;
+  &__primary {
+    background-color: $primary;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: rem(10);
+    color: $light;
+    transition: background-color ease-in-out 0.3s;
+    &:hover {
+      background-color: rgba($color: $primary, $alpha: 0.6);
+    }
+  }
+}

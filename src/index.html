@@ -5,11 +5,14 @@
 })
 
 <body>
-	@@include('html/components/header/header.html', {})
+	@@include('html/sections/header/header.html', {})
 	<main>
-		@@include('html/components/main/main.html', {})
+		@@include('html/sections/main/main.html', {})
+		@@include('html/sections/help/help.html', {})
+		@@include('html/sections/clients/clients.html', {})
+		@@include('html/sections/touch/touch.html', {})
 	</main>
-	@@include('html/footer.html', {})
+	@@include('html/sections/footer/footer.html', {})
 	<script src="assets/js/app.min.js"></script>
 </body>
 

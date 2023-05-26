@@ -1,0 +1,34 @@
+.help {
+  display: block;
+  padding: rem(180) 0 rem(212);
+  @media (max-width: 1024px) {
+    padding: rem(90) 0 rem(106);
+  }
+  @media (max-width: 992px) {
+    padding: rem(45) 0 rem(53);
+  }
+  &__wrap {
+    column-count: 2;
+    column-gap: rem(100);
+    @media (max-width: 885px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .card__item {
+    margin-bottom: rem(100);
+    margin-left: auto;
+    @media (max-width: 885px) {
+      margin-right: auto;
+      margin-bottom: rem(50);
+    }
+  }
+  &__h2 {
+    max-width: rem(400);
+    margin-bottom: rem(158);
+    @media (max-width: 885px) {
+      margin-bottom: rem(70);
+    }
+  }
+}
