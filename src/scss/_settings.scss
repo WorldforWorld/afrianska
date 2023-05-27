@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Gilroy-Reg';
+  font-family: "Gilroy-Reg";
   font-size: 1rem;
 }
 body.lock-js {
@@ -27,7 +27,7 @@ body.lock-js {
     text-transform: uppercase;
   }
   &-h1 {
-    font-family: 'Galien';
+    font-family: "Galien";
     font-size: rem(64);
     line-height: 116%;
     letter-spacing: 0.04em;
@@ -40,7 +40,7 @@ body.lock-js {
     }
   }
   &-h2 {
-    font-family: 'Gilroy-Semi';
+    font-family: "Gilroy-Semi";
     font-size: rem(36);
     line-height: 128%;
     letter-spacing: 0.05em;

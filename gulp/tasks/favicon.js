@@ -1,9 +1,9 @@
-import { createRequire } from 'module';
+import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const packageFile = require('../../package.json');
+const packageFile = require("../../package.json");
 
-import favicons from 'gulp-favicons';
-import filter from 'gulp-filter';
+import favicons from "gulp-favicons";
+import filter from "gulp-filter";
 // Возможно вынести конфиг в файл package.json
 const config = {
   icons: {
@@ -16,7 +16,7 @@ const config = {
     firefox: false,
     appleStartup: false,
   },
-  path: 'assets/img/favicon/',
+  path: "assets/img/favicon/",
 };
 export const favicon = () => {
   return app.gulp
@@ -24,8 +24,8 @@ export const favicon = () => {
     .pipe(
       app.plugins.plumber(
         app.plugins.notify.onError({
-          title: 'Favicon',
-          message: 'Error <%= error.message %>',
+          title: "Favicon",
+          message: "Error <%= error.message %>",
         })
       )
     )
@@ -41,6 +41,6 @@ export const favicon = () => {
       })
     )
     .pipe(app.gulp.dest(`${app.path.build.favicon}`))
-    .pipe(filter(['favicon.ico', 'apple-touch-icon.png', 'manifest.json']))
+    .pipe(filter(["favicon.ico", "apple-touch-icon.png", "manifest.json"]))
     .pipe(app.gulp.dest(`${app.path.buildFolder}`));
 };

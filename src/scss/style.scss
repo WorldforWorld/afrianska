@@ -1,23 +1,23 @@
 // mixin
-@import 'mixin';
+@import "mixin";
 
 // settings
-@import 'animations';
-@import 'normalize';
-@import 'variables';
-@import 'grid';
-@import 'fonts';
-@import 'settings';
-@import 'interface';
+@import "animations";
+@import "normalize";
+@import "variables";
+@import "grid";
+@import "fonts";
+@import "settings";
+@import "interface";
 
 // components
-@import 'components/card/card.scss';
-@import 'components/form_popup/form_popup';
+@import "components/card/card.scss";
+@import "components/form_popup/form_popup";
 
 // sections
-@import 'sections/header/header';
-@import 'sections/main/main';
-@import 'sections/help/help';
-@import 'sections/clients/clients';
-@import 'sections/touch/touch';
-@import 'sections/footer/footer';
+@import "sections/header/header";
+@import "sections/main/main";
+@import "sections/help/help";
+@import "sections/clients/clients";
+@import "sections/touch/touch";
+@import "sections/footer/footer";

@@ -1,5 +1,5 @@
 // Получаем имя папки проекта
-import * as nodePath from 'path';
+import * as nodePath from "path";
 const rootFolder = nodePath.basename(nodePath.resolve());
 
 const buildFolder = `./dist`;
@@ -13,7 +13,7 @@ export const path = {
     images: `${buildFolder}/assets/img/`,
     fonts: `${buildFolder}/assets/fonts/`,
     files: `${buildFolder}/assets/files/`,
-    favicon: `${buildFolder}/assets/img/favicon/`
+    favicon: `${buildFolder}/assets/img/favicon/`,
   },
   src: {
     js: `${srcFolder}/js/app.js`,
@@ -37,5 +37,5 @@ export const path = {
   buildFolder: buildFolder,
   srcFolder: srcFolder,
   rootFolder: rootFolder,
-  ftp: `test` // Название папки на удалённом сервере
-}
+  ftp: `test`, // Название папки на удалённом сервере
+};

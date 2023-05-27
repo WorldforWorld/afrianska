@@ -18,7 +18,7 @@
   &__title {
     padding-top: rem(236);
     margin-bottom: rem(16);
-    font-family: 'Gilroy-Semi';
+    font-family: "Gilroy-Semi";
     font-size: rem(20);
     line-height: 150%;
     letter-spacing: 0.0485em;
@@ -34,19 +34,20 @@
   &__link {
     display: flex;
     align-items: center;
-    font-family: 'Gilroy-Semi';
+    font-family: "Gilroy-Semi";
     font-size: rem(14);
     line-height: 214%;
     letter-spacing: 0.05em;
     color: $primary;
     text-decoration: none;
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       width: 16px;
       height: 16px;
       margin-left: rem(28);
-      background: url('../../assets/img/theme/arrow.svg') no-repeat center / cover;
+      background: url("../../assets/img/theme/arrow.svg") no-repeat center /
+        cover;
     }
   }
 }

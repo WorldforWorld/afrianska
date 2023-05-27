@@ -7,7 +7,7 @@
   cursor: pointer;
   &:before,
   &:after {
-    content: '';
+    content: "";
     background-color: $burger;
     position: absolute;
     width: 100%;
