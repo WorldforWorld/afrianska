@@ -1,7 +1,8 @@
-// settings
+// mixin
 @import 'mixin';
 
 // settings
+@import 'animations';
 @import 'normalize';
 @import 'variables';
 @import 'grid';
@@ -11,6 +12,7 @@
 
 // components
 @import 'components/card/card.scss';
+@import 'components/form_popup/form_popup';
 
 // sections
 @import 'sections/header/header';
