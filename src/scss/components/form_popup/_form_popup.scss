@@ -12,6 +12,14 @@
     backdrop-filter: blur(5px);
     transition: transform ease-in 0.2s;
     transform: scale(0);
+    overflow: auto;
+    @media (max-height: 825px) {
+      align-items: flex-start;
+      padding: rem(15);
+    }
+    @media (max-width: 520px) {
+      padding: rem(15);
+    }
     &.open {
       transform: scale(1);
     }
@@ -61,6 +69,9 @@
     background-color: $light;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
     border-radius: rem(10);
+    @media (max-width: 520px) {
+      padding: rem(28);
+    }
   }
   &__close {
     position: absolute;
@@ -73,9 +84,16 @@
     &:hover {
       transform: rotate(-10deg);
     }
+    @media (max-width: 520px) {
+      right: rem(10);
+      top: 0;
+    }
   }
   &__header {
     margin-bottom: rem(48);
+    @media (max-width: 520px) {
+      margin-bottom: rem(24);
+    }
   }
   &__h2 {
     margin: 0;
@@ -90,9 +108,15 @@
     flex-direction: column;
     &:not(:last-of-type) {
       margin-bottom: rem(32);
+      @media (max-width: 520px) {
+        margin-bottom: rem(16);
+      }
     }
     &:last-of-type {
       margin-bottom: rem(72);
+      @media (max-width: 520px) {
+        margin-bottom: rem(36);
+      }
     }
     &.error {
       textarea,
@@ -117,6 +141,9 @@
     line-height: 188%;
     letter-spacing: 0.04em;
     color: $text;
+    @media (max-width: 520px) {
+      padding: rem(10) rem(21);
+    }
   }
   &__textarea {
     max-width: 100%;
