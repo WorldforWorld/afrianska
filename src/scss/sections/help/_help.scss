@@ -16,7 +16,7 @@
       align-items: center;
     }
   }
-  .card__item {
+  &__item {
     margin-bottom: rem(100);
     margin-left: auto;
     @media (max-width: 885px) {
