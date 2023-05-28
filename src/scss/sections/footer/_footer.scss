@@ -39,6 +39,11 @@
         a {
           text-decoration: none;
           color: $light;
+          opacity: 1;
+          transition: opacity ease-in-out 0.3s;
+          &:hover {
+            opacity: 0.6;
+          }
         }
       }
     }

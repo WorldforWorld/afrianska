@@ -48,6 +48,12 @@
       margin-left: rem(28);
       background: url("../../assets/img/theme/arrow.svg") no-repeat center /
         cover;
+      transition: margin-left ease-in-out 0.3s;
+    }
+    &:hover {
+      &::after {
+        margin-left: rem(35);
+      }
     }
   }
 }
