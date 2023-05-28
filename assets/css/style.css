@@ -642,6 +642,13 @@ body.lock-js {
   height: 16px;
   margin-left: 1.75rem;
   background: url("../../assets/img/theme/arrow.svg") no-repeat center/cover;
+  -webkit-transition: margin-left ease-in-out 0.3s;
+  -o-transition: margin-left ease-in-out 0.3s;
+  transition: margin-left ease-in-out 0.3s;
+}
+
+.card__link:hover::after {
+  margin-left: 2.1875rem;
 }
 
 .form__shadow {
@@ -1034,7 +1041,7 @@ body.lock-js {
           column-gap: 6.25rem;
 }
 
-.help .card__item {
+.help__item {
   margin-bottom: 6.25rem;
   margin-left: auto;
 }
@@ -1099,6 +1106,14 @@ body.lock-js {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  opacity: 1;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.clients__logo a:hover {
+  opacity: 0.6;
 }
 
 .clients__more {
@@ -1180,6 +1195,14 @@ body.lock-js {
 .footer__item > ul > li a {
   text-decoration: none;
   color: #ffffff;
+  opacity: 1;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+}
+
+.footer__item > ul > li a:hover {
+  opacity: 0.6;
 }
 
 .footer__logo {
@@ -1371,7 +1394,7 @@ body.lock-js {
             align-items: center;
   }
 
-  .help .card__item {
+  .help__item {
     margin-right: auto;
     margin-bottom: 3.125rem;
   }
