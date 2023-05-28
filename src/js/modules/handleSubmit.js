@@ -18,12 +18,14 @@ const validateField = (field) => {
 const message = (form, text, fields) => {
   form.classList.remove("load");
   form.parentNode.parentNode.parentNode.classList.add("success");
+  const body = document.querySelector("body");
   const textMessage = form.parentNode.parentNode.parentNode.querySelector(
     ".form__message span"
   );
   textMessage.textContent = text;
   setTimeout(() => {
     form.parentNode.parentNode.parentNode.classList.remove("open");
+    body.classList.remove("lock-js");
   }, 1000);
   setTimeout(() => {
     form.parentNode.parentNode.parentNode.classList.remove("success");
