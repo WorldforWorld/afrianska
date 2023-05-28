@@ -47,7 +47,6 @@
     "gulp-newer": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
-    "gulp-pug": "latest",
     "gulp-rename": "latest",
     "gulp-replace": "latest",
     "gulp-sass": "latest",
