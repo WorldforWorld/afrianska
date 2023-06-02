@@ -14,9 +14,10 @@
     box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
     border-radius: rem(10);
     color: $light;
-    transition: background-color ease-in-out 0.3s;
+    opacity: 1;
+    transition: opacity ease-in-out 0.3s;
     &:hover {
-      background-color: rgba($color: $primary, $alpha: 0.6);
+      opacity: 0.6;
     }
   }
 }

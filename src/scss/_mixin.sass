@@ -1,7 +1,17 @@
 //Адаптивное свойство
 @use 'sass:math'
+@use "sass:color"
 $maxWidth: 1920
 $maxWidthContainer: 1170
+
+
+@function convertColor($colors)
+  $red: color.red($colors)
+  $green: color.green($colors)
+  $blue: color.blue($colors)
+  @return $red $green $blue
+
+
 
 @mixin adaptiv-value($property, $startSize, $minSize, $type) 
   $addSize: $startSize - $minSize

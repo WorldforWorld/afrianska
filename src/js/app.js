@@ -12,7 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
   popup();
 
   const form = document.querySelector("form");
+  const fields = form.querySelectorAll(".form__input");
 
+  fields.forEach((field) => {
+    field.addEventListener("input", () => {
+      handleSubmit(event, form);
+    });
+  });
   form.addEventListener("submit", (event) => {
     handleSubmit(event, form);
   });
