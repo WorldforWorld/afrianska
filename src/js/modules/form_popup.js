@@ -1,6 +1,6 @@
 export function popup() {
   // Получаем ссылки на элементы формы
-  const formShadow = document.querySelector(".form__shadow");
+  const formShadow = document.querySelector(".form-submit");
   const formClose = document.querySelector(".form__close");
   const openPopup = document.querySelector('a[data-target="feedback-popup"]');
   const body = document.querySelector("body");

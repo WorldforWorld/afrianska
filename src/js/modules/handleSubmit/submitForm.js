@@ -1,19 +1,19 @@
 const message = (form, text) => {
   form.classList.remove("load");
-  form.closest(".form__shadow").classList.add("success");
+  form.closest(".form-submit").classList.add("success");
   const body = document.querySelector("body");
   const shadow = document.querySelector(".shadow");
   const textMessage = form
-    .closest(".form__shadow")
+    .closest(".form-submit")
     .querySelector(".form__message span");
   textMessage.textContent = text;
   setTimeout(() => {
-    form.closest(".form__shadow").classList.remove("open");
+    form.closest(".form-submit").classList.remove("open");
     body.classList.remove("lock-js");
     shadow.classList.remove("active");
   }, 1000);
   setTimeout(() => {
-    form.closest(".form__shadow").classList.remove("success");
+    form.closest(".form-submit").classList.remove("success");
     form.reset();
   }, 1500);
 };
