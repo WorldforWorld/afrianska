@@ -6,8 +6,10 @@
   @media (max-width: 1068px) {
     padding-right: 0;
   }
-  &__secondary {
+  &_background_secondary {
     border-top-right-radius: rem(200);
+    background-color: $secondary;
+    color: $light !important;
     @media (max-width: 1216px) {
       border-top-right-radius: rem(100);
     }

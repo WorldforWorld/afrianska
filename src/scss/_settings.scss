@@ -14,11 +14,11 @@ body.lock-js {
   @media (max-width: 767px) {
     padding: 36px 0;
   }
-  &--primary {
+  &_background_primary {
     background-color: $primary;
     color: $light !important;
   }
-  &--secondary {
+  &_background_secondary {
     background-color: $secondary;
     color: $light !important;
   }
