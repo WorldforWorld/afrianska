@@ -8,6 +8,7 @@
   text-decoration: none;
   line-height: rem(26);
   letter-spacing: 0.04em;
+  cursor: pointer;
   &__primary {
     background-color: $primary;
     box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);

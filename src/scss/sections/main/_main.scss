@@ -1,17 +1,30 @@
 .main {
   position: relative;
-  min-height: rem(768);
-  background-repeat: no-repeat;
-  background-position: calc(100% - rem(23)) rem(121);
-  background-size: 40.45vw;
+  height: 100vh;
+  margin-top: rem(200);
+  height: calc(100vh - 200px);
   @media (max-width: 960px) {
-    display: flex;
-    background-image: none !important;
-    min-height: 100vh;
+    margin-top: rem(100);
+    height: calc(100vh - 100px);
   }
   & > .container {
     position: relative;
     z-index: 3;
+  }
+  &__container {
+    height: calc(100% - 200px);
+    display: flex;
+    align-items: center;
+  }
+  &__bg {
+    position: absolute;
+    right: rem(22);
+    bottom: rem(56);
+    max-width: 50.4%;
+    height: 110%;
+    @media (max-width: 960px) {
+      display: none;
+    }
   }
   &__wrap {
     max-width: rem(520);
@@ -25,11 +38,12 @@
     }
   }
   &__h1 {
-    margin-bottom: rem(32);
+    margin-top: rem(-12);
+    margin-bottom: rem(41);
   }
   &__subtitle {
     margin-bottom: rem(72);
-    margin-right: rem(128);
+    margin-right: rem(108);
     @media (max-width: 960px) {
       margin-bottom: rem(35);
       margin-right: 0;

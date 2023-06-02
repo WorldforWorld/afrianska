@@ -8,8 +8,6 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.8);
-    backdrop-filter: blur(5px);
     transition: transform ease-in 0.2s;
     transform: scale(0);
     overflow: auto;
@@ -22,6 +20,7 @@
     }
     &.open {
       transform: scale(1);
+      z-index: 5;
     }
     &.success {
       .form__wrap {

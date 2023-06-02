@@ -3,6 +3,10 @@
 @import "../../components/nav/nav";
 
 .header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   padding-top: rem(48);
   padding-bottom: rem(15);
   @media (max-width: 960px) {

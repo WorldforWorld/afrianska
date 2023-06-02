@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Gilroy-Reg";
@@ -62,4 +63,22 @@ body.lock-js {
   &-light {
     color: $light;
   }
+}
+.shadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  backdrop-filter: blur(0);
+  z-index: -1;
+  user-select: none;
+  opacity: 0;
+  transition: opacity ease-in-out 0.3s, backdrop-filter ease-in-out 0.3s;
+}
+.shadow.active {
+  opacity: 1;
+  z-index: 5;
+  backdrop-filter: blur(5px);
 }
