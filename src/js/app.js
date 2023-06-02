@@ -1,7 +1,7 @@
 import * as nav from "./modules/nav.js";
 import { isWebp } from "./modules/functions.js";
 import { popup } from "./modules/form_popup.js";
-import { handleSubmit } from "./modules/handleSubmit.js";
+import { handleSubmit } from "./modules/handleSubmit/handleSubmit.js";
 
 isWebp();
 document.addEventListener("DOMContentLoaded", function () {

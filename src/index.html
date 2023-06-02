@@ -5,16 +5,17 @@
 })
 
 <body>
-  @@include('html/sections/header/header.html', {})
-  <main>
-    @@include('html/sections/main/main.html', {})
-    @@include('html/sections/help/help.html', {})
-    @@include('html/sections/clients/clients.html', {})
-    @@include('html/sections/touch/touch.html', {})
-  </main>
-  @@include('html/sections/footer/footer.html', {})
-  @@include('html/components/form_popup/form_popup.html', {})
-  <script src="assets/js/app.min.js"></script>
+	<div class="shadow"></div>
+	@@include('html/sections/header/header.html', {})
+	<main>
+		@@include('html/sections/main/main.html', {})
+		@@include('html/sections/help/help.html', {})
+		@@include('html/sections/clients/clients.html', {})
+		@@include('html/sections/touch/touch.html', {})
+	</main>
+	@@include('html/sections/footer/footer.html', {})
+	@@include('html/components/form_popup/form_popup.html', {})
+	<script src="assets/js/app.min.js"></script>
 </body>
 
 </html>
