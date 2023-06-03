@@ -105,6 +105,7 @@
   &__group {
     display: flex;
     flex-direction: column;
+    position: relative;
     &:not(:last-of-type) {
       margin-bottom: rem(32);
       @media (max-width: 520px) {
@@ -117,11 +118,24 @@
         margin-bottom: rem(36);
       }
     }
-    &.error {
+    &--error {
+      color: red;
       textarea,
       input {
         border-color: red;
       }
+    }
+  }
+  &__error {
+    position: absolute;
+    left: 0;
+    top: calc(100% + rem(10));
+    font-size: rem(12);
+    color: inherit;
+    @media (max-width: 520px) {
+      position: static;
+      margin-top: rem(5);
+      order: 1;
     }
   }
   &__label {
@@ -140,6 +154,7 @@
     line-height: 188%;
     letter-spacing: 0.04em;
     color: $text;
+    outline: none;
     @media (max-width: 520px) {
       padding: rem(10) rem(21);
     }
@@ -153,7 +168,10 @@
     outline: none;
     border: none;
     width: 100%;
-    cursor: pointer;
+    &:disabled {
+      pointer-events: none;
+      background-color: gray;
+    }
   }
   &__message {
     display: none;
