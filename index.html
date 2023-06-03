@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
   
-  <link rel="stylesheet" href="assets/css/style.min.css?_v=20230602130857">
+  <link rel="stylesheet" href="assets/css/style.min.css?_v=20230603075817">
   <title>Afrianska</title>
 </head>
 
@@ -191,24 +191,28 @@
 		</div>
 		<div class="form__body">
 			<form>
-				<div class="form__group">
+				<div class="form__group form__required">
+					<div class="form__error"></div>
 					<label for="user-name" class="form__label">Full Name*</label>
 					<input id="user-name" class="form__input" placeholder="Your Name">
 				</div>
-				<div class="form__group">
+				<div class="form__group form__required">
+					<div class="form__error"></div>
 					<label for="user-email" class="form__label">Email*</label>
 					<input id="user-email" class="form__input" placeholder="Your Email">
 				</div>
-				<div class="form__group">
+				<div class="form__group form__required">
+					<div class="form__error"></div>
 					<label for="user-phone" class="form__label">Phone*</label>
 					<input id="user-phone" class="form__input" placeholder="Your Phone">
 				</div>
-				<div class="form__group">
+				<div class="form__group form__required">
+					<div class="form__error"></div>
 					<label for="user-message" class="form__label">Message*</label>
 					<textarea id="user-message" cols="30" rows="3" class="form__textarea form__input"
 						placeholder="Your Message"></textarea>
 				</div>
-				<button class="btn btn__primary form__btn" type="submit">Submit</button>
+				<button class="btn btn__primary form__btn" type="submit" disabled>Submit</button>
 			</form>
 		</div>
 	</div>
@@ -216,7 +220,7 @@
 		<span class="text-h2"></span>
 	</div>
 </div>
-	<script src="assets/js/app.min.js?_v=20230602130857"></script>
+	<script src="assets/js/app.min.js?_v=20230603075817"></script>
 </body>
 
 </html>
