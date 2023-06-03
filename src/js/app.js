@@ -1,7 +1,8 @@
 import * as nav from "./modules/nav.js";
 import { isWebp } from "./modules/functions.js";
 import { popup } from "./modules/form_popup.js";
-import { handleSubmit } from "./modules/handleSubmit/handleSubmit.js";
+import { formValidate } from "./modules/formValidate.js";
+import { handleSubmit } from "./modules/handleSubmit.js";
 
 isWebp();
 document.addEventListener("DOMContentLoaded", function () {
@@ -12,14 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
   popup();
 
   const form = document.querySelector("form");
-  const fields = form.querySelectorAll(".form__input");
+  formValidate(document.querySelector(".form-submit"));
 
-  fields.forEach((field) => {
-    field.addEventListener("input", () => {
-      handleSubmit(event, form);
-    });
-  });
   form.addEventListener("submit", (event) => {
-    handleSubmit(event, form);
+    event.preventDefault();
+    handleSubmit(form);
   });
 });
