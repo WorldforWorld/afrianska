@@ -6,7 +6,6 @@ export const formValidate = (event) => {
   const messageInput = form.querySelector("#user-message");
   const submitButton = form.querySelector(".form__btn");
 
-  // Функция для проверки валидности поля "Name"
   function validateFullName() {
     const fullNameValue = fullNameInput.value.trim();
     const numericPattern = /[0-9]/;
@@ -32,7 +31,6 @@ export const formValidate = (event) => {
     }
   }
 
-  // Функция для проверки валидности поля "Email"
   function validateEmail() {
     const emailValue = emailInput.value.trim();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -46,7 +44,6 @@ export const formValidate = (event) => {
     }
   }
 
-  // Функция для проверки валидности поля "Phone"
   function validatePhone() {
     const phoneValue = phoneInput.value.trim();
     const phonePattern = /^\d{10}$/;
@@ -60,7 +57,6 @@ export const formValidate = (event) => {
     }
   }
 
-  // Функция для проверки валидности поля "Message"
   function validateMessage() {
     const messageValue = messageInput.value.trim();
 
@@ -73,7 +69,6 @@ export const formValidate = (event) => {
     }
   }
 
-  // Функция для установки ошибки для поля ввода
   function setError(input, errorMessage) {
     const formGroup = input.closest(".form__group");
     const errorText = formGroup.querySelector(".form__error");
@@ -83,7 +78,6 @@ export const formValidate = (event) => {
     checkFormValidity();
   }
 
-  // Функция для установки успешного состояния для поля ввода
   function setSuccess(input) {
     const formGroup = input.closest(".form__group");
     const errorText = formGroup.querySelector(".form__error");
@@ -93,7 +87,6 @@ export const formValidate = (event) => {
     checkFormValidity();
   }
 
-  // Функция для проверки всех полей формы и разблокировки кнопки отправки
   function checkFormValidity() {
     const isEmptyField = checkEmptyFields();
     const errorFields = form.querySelectorAll(".form__group--error");
@@ -105,7 +98,6 @@ export const formValidate = (event) => {
     }
   }
 
-  // Функция для проверки наличия пустых полей
   function checkEmptyFields() {
     const inputs = form.querySelectorAll(".form__required .form__input");
     for (let i = 0; i < inputs.length; i++) {
@@ -118,13 +110,11 @@ export const formValidate = (event) => {
     return false;
   }
 
-  // Обработчики событий на каждое поле формы
   fullNameInput.addEventListener("blur", validateFullName);
   emailInput.addEventListener("blur", validateEmail);
   phoneInput.addEventListener("blur", validatePhone);
   messageInput.addEventListener("blur", validateMessage);
 
-  // Обработчики событий на каждое поле формы
   fullNameInput.addEventListener("input", validateFullName);
   emailInput.addEventListener("input", validateEmail);
   phoneInput.addEventListener("input", validatePhone);

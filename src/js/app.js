@@ -6,10 +6,8 @@ import { handleSubmit } from "./modules/handleSubmit.js";
 
 isWebp();
 document.addEventListener("DOMContentLoaded", function () {
-  // Бургер меню
   nav.burgerMenu();
 
-  // Форма обратной связи
   popup();
 
   const form = document.querySelector("form");

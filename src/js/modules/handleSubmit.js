@@ -8,11 +8,13 @@ const message = (form, text) => {
     .closest(".form-submit")
     .querySelector(".form__message span");
   textMessage.textContent = text;
+
   setTimeout(() => {
     form.closest(".form-submit").classList.remove("open");
     body.classList.remove("lock-js");
     shadow.classList.remove("active");
   }, 1000);
+
   setTimeout(() => {
     form.closest(".form-submit").classList.remove("success");
     form.reset();
@@ -22,6 +24,7 @@ const message = (form, text) => {
 
 export const handleSubmit = (form) => {
   const formData = new FormData(form);
+
   form.classList.add("load");
   fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "POST",
